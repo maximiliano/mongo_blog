@@ -1,0 +1,15 @@
+<h1>Listing articles</h1>
+
+<%= render 'list' %>
+
+<%= link_to 'New Article', new_article_path %>
+
+<%= form_tag(search_articles_path, :method => "get") do %>
+  <%= label_tag(:type, "Search by:") %>
+  <%= select_tag(:type, options_for_select([["Title", "title"],["Author", "author"]])) %>
+
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query) %>
+
+  <%= submit_tag("Search!") %>
+<% end %>

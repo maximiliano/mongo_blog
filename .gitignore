@@ -1,0 +1,16 @@
+.bundle
+db/*.sqlite3
+.rvmrc
+*.swo
+*.swp
+**/*.swo
+**/*.swp
+*~
+**/*~
+rack.pid
+log/*.log
+tmp/**/*
+tmp/*
+config/database.yml
+db/schema.rb
+public/system/*
